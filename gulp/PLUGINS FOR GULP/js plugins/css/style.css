@@ -1,0 +1,93 @@
+﻿/* HEADER */
+header{height: 120px;}
+header .logo{float: left; width: 167px;}
+header .logo img{width: 100%;}
+header .contact{float: right; width:225px; font-family: arial; font-size: 12px; color: #a0a0a0;
+		font-weight: bold; line-height: 25px; margin-right: 127px;
+		transition: margin-right 1s;}		
+header .contact span{color:#cf3232;}
+header .contact span:nth-child(4){font-size: 20px;}
+header .contact span:first-child{text-decoration: underline;}
+
+/* NAV */
+header .menu{overflow: hidden;}
+header .menu ul{list-style-type: none; margin: 50px 60px 0 36px;}
+header .menu li{display: inline; margin-right: 23px;}
+header .menu a{color: black; font-family: arial;
+		font-size: 12px; font-weight: bold; text-decoration: none;
+		transition: background-color 1s ease;
+		padding: 10px 0;}
+header .menu a:hover{color:#cf3232; background-color: yellow;
+		border-top: 2px solid black;}
+
+/*убираем полностью меню*/
+#menu2 {display: none;}
+
+/* SLIDER */
+#slider{height: 195px;}
+
+/* ASIDE */
+aside{min-height: 465px; width: 158px; float: left;}
+aside .mtext{margin: 26px 0 0 0px; color: #575656;;}
+aside ul{list-style-type: none;}
+aside li{margin: 18px 10px 0 0px;}
+aside .ltext{margin-top: 24px;}
+aside .ltext a{text-decoration: none; font-family: arial;
+		font-size: 11px; color: #575656;
+		display: block; padding: 5px 0;
+		transition: background-color 1s;}
+aside .ltext a:hover{background-color: yellow;}
+
+/* MAIN CONTENT */
+#content{min-height: 465px; overflow: hidden; color: #575656;}
+#content div{font-size: Georgia; font-size: 12px; line-height: 2em;}
+#content .one{text-indent: 16px;}
+#content h1{font-size: 18px; font-family: Georgia; margin: 25px 0;}
+
+/* FOOTER */
+footer{height: 87px; font-family: Georgia; font-size: 12px;
+		color: #575656; position: relative;}
+footer .f1{width: 302px;}
+footer .f2{position: absolute; top: 45px; left: 368px;}
+footer .f2 span{font-size: 20px;}
+
+
+/* MEDIA */
+@media all and (max-width: 955px)
+{
+	/*сдвиг и центровка меню*/
+	header .contact{margin-right: 0;}
+	header .menu ul{margin-left: 23px; margin-right: 0; text-align: center;}	
+}
+
+@media all and (max-width: 746px)
+{
+	/*изменить меню и футер*/
+	header .menu ul{margin-top: 0;}
+	header .menu li{display: block; margin-top: 15px;}
+	
+	footer .foo img{display:block; margin: 0 auto;}
+	footer .f1{margin: 0 auto; text-align: center;}
+	footer .f2{position: static; margin: 0 auto;text-align: center;}
+}
+
+@media all and (max-width: 570px)
+{
+	/*отключение меню и вкл меню внизу ранее отключенного*/
+
+	header .menu {display:none;}
+	#menu2 {display: block;}
+	#menu2 ul{text-align: center; list-style-type: none;}
+	#menu2 li{display: inline; margin-right: 23px;}
+	#menu2 a{color: black; font-family: arial;
+		font-size: 14px; font-weight: bold; text-decoration: none;}
+}
+
+@media all and (max-width: 418px)
+{
+	#wrapper header .logo img{display: none;}
+	#wrapper header .contact{float: none; margin: 0 auto; text-align: center;}
+	#menu2 li{display: inline; margin-right: 10px;}
+	/*header .contact{font-size: 11px;}
+	header .contact{width: 217px;}*/
+}

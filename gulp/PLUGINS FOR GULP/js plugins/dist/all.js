@@ -1,0 +1,1 @@
+function foo(){alert("foo")}window.onload=function(){foo()};
