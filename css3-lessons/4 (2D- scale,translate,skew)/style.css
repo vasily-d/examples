@@ -1,0 +1,43 @@
+body{background-color: black;}
+
+/*scale*/
+.test
+{
+	width: 300px;
+	height: 100px;
+	margin: 100px;
+	background: rgba(0,255,0,1);
+	
+	transition: all 2s;
+	position: relative;
+}
+.test:hover{z-index: 3; transform: scale(1.5,2);}
+
+/*skew*/
+.test1
+{
+	width: 300px;
+	height: 100px;
+	margin: 50px;
+	background: rgba(0,255,0,1);
+	
+	transition: all 2s;
+}
+.test1:hover{transform: skew(30deg,20deg);}
+
+/*translate*/
+.test2
+{
+	width: 300px;
+	height: 100px;
+	margin: 10px;
+	background: rgba(0,255,0,1);
+	
+	transition: all 2s;
+}
+.test2:hover{transform: translate(40px,100px);}
+
+/*
+scale(1,1.5) translate(0, -x1 px);
+width x2 px;
+*/

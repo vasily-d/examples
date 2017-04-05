@@ -1,0 +1,37 @@
+body{background-color: black;}
+
+/*linear-gradient*/
+.test
+{
+	width: 500px;
+	height: 300px;
+	margin: 100px;
+	
+	/*from up to down by default*/
+	background: linear-gradient(#f00, #fff);
+	/*background: linear-gradient(#f00, #fff, #00f);*/
+	
+	/*from right to left*/
+	/*background: linear-gradient(to left, #f00, #fff, #00f);*/
+	/*background: linear-gradient(to left, rgba(255,255,0,1), rgba(0,0,255,0.3));*/
+	/*background: linear-gradient(45deg, #f00, #fff, #00f);*/
+	
+	/*repeat*/
+	/*background: repeating-linear-gradient(to top, #fff 10%, #00f 20%);*/	
+}
+
+/*radial-gradient*/
+.test1
+{
+	width: 500px;
+	height: 300px;
+	margin: 100px;
+	
+	/*background: radial-gradient(#fff, #f00);*/
+	/*background: radial-gradient(#fff 70%, #f00);*/
+	/*background: radial-gradient(at 0px 0px ,#fff 20%, #f00);*/
+	background: radial-gradient(at 500px 300px ,#0ff 20%, #00f);
+	/*background: radial-gradient(circle, #0ff 50%, #00f);*/
+	/*background: radial-gradient(red, yellow);*/
+	/*background: repeating-radial-gradient(red 10%, yellow 20%, green 30%);*/	
+}

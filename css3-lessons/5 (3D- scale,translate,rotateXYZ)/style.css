@@ -1,0 +1,64 @@
+body{background-color: black; perspective: 400px;}
+
+/*scale 3D*/
+.test
+{
+	width: 300px;
+	height: 100px;
+	margin: 100px;
+	background: rgba(0,255,0,1);
+	
+	transition: all 2s;
+}
+.test:hover{transform: scale3d(2,2,3);}
+
+/*translateXYZ 3D*/
+.test1
+{
+	width: 300px;
+	height: 100px;
+	margin: 20px;
+	background: rgba(0,255,0,1);
+	
+	transition: all 2s;
+}
+.test1:hover{transform: translate3d(40px, 50px, -100px);}
+
+/*rotateXYZ 3D*/
+.test2
+{
+	width: 300px;
+	height: 100px;
+	margin: 20px 50px;
+	display: inline-block;
+	transform-style: preserve-3d;
+	background: rgba(0,255,0,1);
+	
+	transition: all 2s;
+}
+.test2:hover{transform: rotateX(30deg);}
+.test3
+{
+	width: 300px;
+	height: 100px;
+	margin: 20px 50px;
+	display: inline-block;
+	transform-style: preserve-3d;
+	background: rgba(0,255,0,1);
+	
+	transition: all 2s;
+}
+.test3:hover{transform: rotateY(30deg);}
+.test4
+{
+	width: 300px;
+	height: 100px;
+	margin: 20px 50px;
+	display: inline-block;
+	transform-style: preserve-3d;
+	background: rgba(0,255,0,1);
+	
+	transition: all 2s;
+}
+.test4:hover{transform: rotateZ(30deg);}
+

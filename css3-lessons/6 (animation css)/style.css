@@ -1,0 +1,33 @@
+body{background-color: black; perspective: 400px;}
+
+/*animation*/
+.test
+{
+	width: 300px;
+	height: 100px;
+	background: rgba(0,255,0,1);
+	
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	
+	animation: anime 4s infinite;
+	-webkit-animation: anime 4s infinite; /*-ms- -o-*/
+}
+
+@keyframes anime
+{
+	0% {left: 100px;}	/*start*/
+	25% {left: 200px; background-color: yellow;}
+	50% {left: 300px;}
+	75% {left: 400px; background-color: red;}
+	100% {left: 100px;}	/*end and return*/
+}
+@-webkit-keyframes anime
+{
+	0% {left: 100px;}	/*start*/
+	25% {left: 200px; background-color: yellow;}
+	50% {left: 300px;}
+	75% {left: 400px; background-color: red;}
+	100% {left: 100px;}	/*end and return*/
+}
