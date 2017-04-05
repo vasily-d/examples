@@ -1,0 +1,30 @@
+//FUNCTION
+#mainEffect{
+	.borderRadius(@r: 50px)
+	{
+		border-radius: @r;
+		-ms-border-radius: @r;
+		-o-border-radius: @r;
+		-webkit-border-radius: @r;
+		
+		box-shadow: @r @r @r rgba(0,250,250,0.9);
+	}
+	
+	//recursion
+	.steps(@val, @i) when(@i >= 0){
+		li:nth-child(@{i}) {margin-left: @val*@i;}
+		
+		.steps(@val, @i - 1);
+	}
+}
+
+#simpleEffect{
+	.borderRadius(@r: 50px)
+	{
+		border-radius: @r;
+		-ms-border-radius: @r;
+		-o-border-radius: @r;
+		-webkit-border-radius: @r;
+	}
+}
+

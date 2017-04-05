@@ -1,0 +1,57 @@
+@import 'lib.less';
+@import 'function.less';
+
+//HEADER
+header{
+	height: 80px; background-color: lime;
+	position: relative;
+	
+	//nesting
+	.logo{position: absolute; top: 0; left: 0;}
+	.tel{position: absolute; top: 0; right: 0;}
+}
+
+//NAV
+nav{
+	@colorLink: #fff;
+	height: 70px; background-color: white;
+	
+	//recursion - steps
+	#mainEffect > .steps(60px, 3);
+	
+	ul li{
+		display: inline-block;
+		margin-right: 40px;
+	
+		a{
+			display: block; padding: 10px 20px;
+			background-color: red; color: @colorLink;
+			transition: background-color 1s;
+		
+			&:hover{background-color: black;}
+		}
+	}
+}
+
+//MAIN
+.main{
+	height: 570px; background-color: yellow;
+	padding: 30px;
+
+	//namespace
+	#mainEffect > .borderRadius(50px);
+}
+
+//FOOTER
+footer{
+	height: @footerHeight;
+	line-height: @footerHeight;
+	background-color: green;
+
+	//mixing
+	//.borderRadius(30%);
+	//.borderRadius();	//50px!
+	
+	//namespace
+	#simpleEffect > .borderRadius(30%);
+}

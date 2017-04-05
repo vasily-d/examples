@@ -1,0 +1,81 @@
+//http://winless.org or gulp
+
+//VARIABLE
+@bodyColor: grey;
+@wrapperHeight: 900px;
+@footerHeight: 40px;
+
+//CONFIG
+*{padding: 0; margin: 0; list-style: none; text-decoration: none;}
+body{background: @bodyColor;}
+.wrapper{width: @wrapperHeight; margin: 20px auto;}
+
+//FUNCTION
+/*
+.borderRadius
+{
+	border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	-webkit-border-radius: 50px;
+}
+*/
+
+//mixing function
+.borderRadius(@r: 50px)
+{
+	border-radius: @r;
+	-ms-border-radius: @r;
+	-o-border-radius: @r;
+	-webkit-border-radius: @r;
+}
+
+//HEADER
+header{
+	height: 80px; background-color: lime;
+	position: relative;
+	
+	//nesting
+	.logo{position: absolute; top: 0; left: 0;}
+	.tel{position: absolute; top: 0; right: 0;}
+}
+
+//NAV
+nav{
+	@colorLink: #fff;
+	height: 70px; background-color: white;
+
+	ul li{
+		display: inline-block;
+		margin-right: 40px;
+	
+		a{
+			display: block; padding: 10px 20px;
+			background-color: red; color: @colorLink;
+			transition: background-color 1s;
+		
+			&:hover{background-color: black;}
+		}
+	}
+}
+
+//MAIN
+.main{
+	height: 570px; background-color: yellow;
+
+	//mixing
+	//.borderRadius();
+	.borderRadius(50px);
+}
+
+//FOOTER
+footer{
+	height: @footerHeight;
+	line-height: @footerHeight;
+	background-color: green;
+
+	//mixing
+	//.borderRadius(30%);
+	//.borderRadius();	//50px!
+	.borderRadius(~"30%");
+}

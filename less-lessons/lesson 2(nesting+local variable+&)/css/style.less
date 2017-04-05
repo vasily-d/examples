@@ -1,0 +1,52 @@
+//http://winless.org or gulp
+
+@bodyColor: grey;
+@wrapperHeight: 900px;
+@footerHeight: 40px;
+
+//using path in variable
+@urlBody: "../img";
+
+*{padding: 0; margin: 0; list-style: none; text-decoration: none;}
+body{background: @bodyColor; 
+	background: url("@{urlBody}/1.png") center no-repeat;
+	background-size: 100%;}
+.wrapper{width: @wrapperHeight; margin: 20px auto;}
+
+//HEADER
+header{
+	height: 80px; background-color: lime;
+	position: relative;
+	
+	//nesting
+	.logo{position: absolute; top: 0; left: 0;}
+	.tel{position: absolute; top: 0; right: 0;}
+}
+
+//NAV
+nav{
+	//local variable
+	@colorLink: #fff;
+	height: 70px; background-color: white;
+
+	ul li{
+		display: inline-block;
+		margin-right: 40px;
+	
+		a{
+			display: block; padding: 10px 20px;
+			background-color: red; color: @colorLink;
+			transition: background-color 1s;
+			
+			//&
+			&:hover{background-color: black;}
+		}
+	}
+}
+
+//MAIN
+.main{height: 570px; background-color: yellow;}
+
+//FOOTER
+footer{height: @footerHeight; line-height: @footerHeight;
+	background-color: green;}
