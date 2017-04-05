@@ -1,0 +1,30 @@
+div,header,nav,.main,aside,section,footer,body
+	{padding: 0; margin: 0; outline: 1px solid red;}
+.clearFix:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+	
+@wrapperW: 900px;
+@wrapperH: 650px;
+
+#wrapper{
+	max-width: @wrapperW; height: @wrapperH; margin: 0 auto; overflow: hidden;
+	
+	header{height: 100px; background-color: #ff0;}
+	nav{height: 50px; background-color: #f00;}
+	.main{
+		height: 450px;
+		
+		aside{
+			float: left; width: 300px; height: inherit;
+		
+			ul{list-style: none;}
+			ul a{text-decoration: none; font-size: 30px;}
+		}
+		section{overflow: hidden; height: inherit;}	
+	}
+	footer{height: 50px; background-color: #f0f;}
+}
