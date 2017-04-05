@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto; }
+
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*mixin*/
+/*by default:#345*/
+/*by default:#345*/
+header {
+  height: 80px;
+  background-color: #345; }
+
+nav {
+  height: 100px;
+  background-color: red; }
+
+.main {
+  height: 500px; }
+  .main aside {
+    height: inherit;
+    background-color: #333;
+    width: 300px;
+    float: left; }
+    .main aside:hover {
+      background: lime; }
+  .main section {
+    height: inherit;
+    background-color: lime;
+    overflow: hidden; }
+
+footer {
+  height: 100px;
+  background-color: yellow; }
+
+/*# sourceMappingURL=style.css.map */

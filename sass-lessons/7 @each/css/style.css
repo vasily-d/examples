@@ -1,0 +1,62 @@
+/* @each */
+.one-icon {
+  width: 100px;
+  height: 100px;
+  float: left;
+  background-image: url(../img/one.jpg);
+  background-size: cover; }
+
+.two-icon {
+  width: 100px;
+  height: 100px;
+  float: left;
+  background-image: url(../img/two.jpg);
+  background-size: cover; }
+
+.three-icon {
+  width: 100px;
+  height: 100px;
+  float: left;
+  background-image: url(../img/three.jpg);
+  background-size: cover; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto; }
+
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+header {
+  height: 70px;
+  background-color: lime; }
+
+nav {
+  height: 100px;
+  background-color: red; }
+
+.main {
+  height: 500px; }
+  .main aside {
+    height: inherit;
+    width: 300px;
+    float: left;
+    background-color: #333; }
+    .main aside:hover {
+      background: lime; }
+  .main section {
+    height: inherit;
+    overflow: hidden;
+    background-color: green; }
+
+footer {
+  height: 100px;
+  background-color: yellow; }
+
+/*# sourceMappingURL=style.css.map */

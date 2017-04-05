@@ -1,0 +1,38 @@
+$backgHeader: lime;
+$backgNav: red;
+$backgAside: #333;
+$backgSection: green;
+$backgFooter: yellow;
+
+*{padding: 0; margin: 0;}
+.wrapper{width: 900px; margin: 0 auto;}
+.clearFix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* mixin */
+/* by default:100px #345 */
+@mixin heightAndColor($h:100px, $c:#345){
+	height: $h;
+	background-color: $c;
+}
+
+header{@include heightAndColor(80px);}
+
+nav{@include heightAndColor(100px, $backgNav);}
+
+.main{
+	height: 500px;
+	
+	aside{
+		@include heightAndColor(inherit, $backgAside);
+		width: 300px; float: left;
+	
+		&:hover{background: lime;}
+	}
+	section{@include heightAndColor(inherit, $backgSection*2); overflow: hidden;}
+}
+
+footer{@include heightAndColor(100px, $backgFooter);}

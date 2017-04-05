@@ -1,0 +1,28 @@
+$backgHeader: lime;
+$backgNav: red;
+$backgAside: #333;
+$backgSection: green;
+$backgFooter: yellow;
+
+*{padding: 0; margin: 0;}
+.wrapper{width: 900px; margin: 0 auto;}
+.clearFix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+header{height: 70px; background-color: $backgHeader;}
+nav{height: 100px; background-color: $backgNav;}
+.main{
+	height: 500px;
+	
+	/* nesting and & */
+	aside{
+		height: inherit; width: 300px; float: left; background-color: $backgAside;
+	
+		&:hover{background: lime;}
+	}
+	section{height: inherit; overflow: hidden; background-color: $backgSection;}
+}
+footer{height: 100px; background-color: $backgFooter;}

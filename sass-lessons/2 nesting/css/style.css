@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto; }
+
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+header {
+  height: 70px;
+  background-color: lime; }
+
+nav {
+  height: 100px;
+  background-color: red; }
+
+.main {
+  height: 500px;
+  /*nesting and &*/ }
+  .main aside {
+    height: inherit;
+    width: 300px;
+    float: left;
+    background-color: #333; }
+    .main aside:hover {
+      background: lime; }
+  .main section {
+    height: inherit;
+    overflow: hidden;
+    background-color: green; }
+
+footer {
+  height: 100px;
+  background-color: yellow; }
+
+/*# sourceMappingURL=style.css.map */

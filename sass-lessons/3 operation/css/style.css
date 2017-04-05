@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto; }
+
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+header {
+  height: 70px;
+  background-color: lime; }
+
+nav {
+  height: 100px;
+  background-color: red; }
+
+.main {
+  height: 500px; }
+  .main aside {
+    /*operation*/
+    height: inherit;
+    width: 300px;
+    float: left;
+    background-color: #999999; }
+    .main aside:hover {
+      background: lime; }
+  .main section {
+    /*operation*/
+    height: inherit;
+    overflow: hidden;
+    background-color: #aaffaa;
+    padding: 10px; }
+
+footer {
+  height: 100px;
+  background-color: yellow; }
+
+/*# sourceMappingURL=style.css.map */

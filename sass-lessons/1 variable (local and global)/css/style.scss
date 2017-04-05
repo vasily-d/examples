@@ -1,0 +1,27 @@
+/* global variable */
+$backgHeader: lime;
+$backgNav: red;
+$backgAside: #333;
+$backgSection: green;
+$backgFooter: yellow;
+
+*{padding: 0; margin: 0;}
+.wrapper{width: 900px; margin: 0 auto;}
+.clearFix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+header{
+	/*local variable*/
+	$backgHeader: grey; /*!global - local to global*/
+	
+	height: 70px;
+	background-color: $backgHeader;
+}
+nav{height: 100px; background-color: $backgNav;}
+.main {height: 500px;}
+.main aside{height: inherit; width: 300px; float: left; background-color: $backgAside;}
+.main section{height: inherit; overflow: hidden; background-color: $backgSection;}
+footer{height: 100px; background-color: $backgFooter;}

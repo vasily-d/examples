@@ -1,0 +1,18 @@
+/* @import - .css or .scss. in less only .css */
+
+@import "reset.scss", "config.scss";
+/*@import "reset.css", "config.css";*/
+
+header{height: 70px; background-color: $backgHeader;}
+nav{height: 100px; background-color: $backgNav;}
+.main{
+	height: 500px;
+
+	aside{
+		height: inherit; width: 300px; float: left; background-color: $backgAside;
+	
+		&:hover{background: lime; text-decoration: none;}
+	}
+	section{height: inherit; overflow: hidden; background-color: $backgSection;}
+}
+footer{height: 100px; background-color: $backgFooter;}

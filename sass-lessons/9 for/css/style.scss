@@ -1,0 +1,43 @@
+$backgHeader: lime;
+$backgNav: red;
+$backgAside: #333;
+$backgSection: green;
+$backgFooter: yellow;
+
+*{padding: 0; margin: 0;}
+.wrapper{width: 900px; margin: 0 auto;}
+.clearFix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+header{height: 70px; background-color: $backgHeader;}
+nav{height: 100px; background-color: $backgNav;}
+.main{
+	height: 500px;
+	
+	aside{
+		height: inherit; width: 300px; float: left; background-color: $backgAside;
+	
+		&:hover{background: lime;}
+	}
+	section{height: inherit; overflow: hidden; background-color: $backgSection;}
+}
+
+footer{
+	height: 100px; background-color: $backgFooter;
+}
+
+/* for [1, 3] -> $i and through - standart!  */
+@for $i from 1 through 3{
+	footer .c-#{$i}
+	{
+		float: left;
+		width: 100px * $i;
+		height: 50px + ($i * 10);
+		background-color: #13f * $i;
+		color: #444 * $i;
+		font-size: 20px * $i;
+	}
+}
