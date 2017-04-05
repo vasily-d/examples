@@ -1,0 +1,18 @@
+*{padding: 0; margin: 0;}
+.main{margin: 10px;}
+.main>div, header, nav, aside, footer, section{outline: 1px solid black; padding: 10px;}
+.main{
+	max-width: 780px;
+	margin: 10px auto;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.main header{height: 57px; flex-basis: 100%; background-color: lime;}
+.main #slider{height: 235px; flex-basis: 100%; background-color: grey;}
+.main nav{height: 39px; flex-basis: 100%; background-color: green;}
+.main section{height: 318px; flex-basis: 430px; flex-grow: 1;  background-color: yellow;}
+.main aside{height: 318px; flex-basis: 235px; flex-grow: 1;  background-color: red;}
+.main footer{height: 50px; flex-basis:100%; background-color: pink;}

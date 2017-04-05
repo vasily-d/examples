@@ -1,0 +1,52 @@
+div>div:nth-child(1)
+{
+	background-color:lime; outline: 1px solid black; padding: 10px; margin: 10px;
+
+	width: 300px;
+	/* or */
+	flex-basis: 300px;	/* adaptive for Axes */
+	
+	/* default */
+	/* flex-basis: auto;
+	flex-basis: 300px;
+	flex-basis: 50%; */
+	
+	height: 200px;
+}
+
+div>div:nth-child(2){
+	background-color:yellow; outline: 1px solid black; padding: 10px; margin: 10px;
+	
+	flex-basis: 400px;	
+	height: 200px;
+}
+
+div>div:nth-child(3){
+	background-color:green; outline: 1px solid black; padding: 10px; margin: 10px;
+	
+	flex-basis: 200px;	
+	height: 200px;
+}
+
+div>div:nth-child(4){
+	background-color:red; outline: 1px solid black; padding: 10px; margin: 10px;
+	
+	width: 300px;
+	height: 200px;
+}
+div>div:nth-child(5){
+	background-color:grey; outline: 1px solid black; padding: 10px; margin: 10px;
+	
+	width: 200px;
+	height: 200px;
+}
+
+body>div{
+	outline:1px solid black; margin: 20px;
+	height: 600px;
+	
+	display: flex;
+	flex-direction: row;
+	
+	flex-wrap: wrap;	
+}
