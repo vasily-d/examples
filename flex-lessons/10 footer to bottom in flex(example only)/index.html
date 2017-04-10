@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>footer in bottom on flex</title>
+	<style>
+		*{padding: 0; margin: 0;}
+
+		html{min-height: 100%; display: flex; flex-direction: column;}
+		body{width: 100%; flex-grow: 1; display: flex; flex-direction: column;}
+
+		header{background-color: yellow; height: 100px;}
+		.main{background-color: grey; flex-grow: 1;}
+
+		footer{background-color: lime; height: 50px;}
+	</style>
+</head>
+
+<body>
+	<header>header</header>
+	<div class="main">content</div>
+	<footer>footer</footer>
+</body>
+</html>
