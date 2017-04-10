@@ -1,0 +1,33 @@
+<script>
+	/*
+		if, switch, ? :, ! && ||
+	*/
+
+	var a = 6;
+	var b = 4;
+	
+	//if else if else
+	if(a > b)
+		alert(a + " > " + b);
+	else if (a < b)
+		alert(a + " < " + b);
+	else
+		alert(a + " = " + b);
+	
+	//switch
+	switch(a > b)
+	{
+		case true: alert(a + " > " + b); break;
+		case false: alert(a + " <= " + b); break;
+		default: alert(a + " > " + b);
+	}
+	
+	// ? : ;
+	var r = a > b ? alert(a + " > " + b) : alert(a + " <= " + b);
+	alert(r); //undefined
+	
+	// &&, ||, !
+	var c = false;
+	if(a > b && !c)	//||
+		alert(a + " > " + b + " and " + "c is " + !!c);	
+</script>

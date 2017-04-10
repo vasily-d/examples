@@ -1,0 +1,56 @@
+<script>
+	/*
+		Type conversion in js - examples
+	*/
+
+	//to string
+	console.log("string:");
+	var a = true;
+	var x = 5;
+	//alert(a);	//"true"
+	console.log(String(true) == "true");
+	console.log(String(4433));
+	console.log(x.toString());
+	console.log(52+"3");
+	console.log(52+"");
+	console.log("11"+undefined);
+	
+	//to number
+	console.log("number:");
+	var a = +"123";
+	var b = +"-123";	//-123
+	//or
+	var b = +"-123"*1;	//-123
+	var c = Number("123");
+	console.log(parseInt("45 px", 10));
+	console.log(parseFloat("12.43 em"));
+	console.log(a);
+	console.log(b);
+	console.log(c);
+	console.log(+true);	//1
+	console.log(+false);	//0
+	console.log(+null);	//0
+	console.log(+"123");	//123
+	console.log(+"a123");	//NaN
+	console.log(+"123a");	//NaN
+	
+	//to bool
+	console.log("bool:");
+	console.log(!!"1"); //true
+	console.log(!!1);	//true
+	console.log(Boolean("3"));	//true	
+	console.log(Boolean(3));	//true
+	console.log("NaN: " + Boolean(NaN));	
+	console.log("0: " + Boolean(0));	
+	console.log("\"\": " + Boolean(""));	
+	console.log("undefined: " + Boolean(undefined));	
+	console.log("null: " + Boolean(null));
+	
+	//&& || !
+	console.log(true && false);
+	console.log(true && true);
+	console.log(true || false);
+	console.log(false || false);
+	console.log(!true);
+	console.log(!false);	
+</script>

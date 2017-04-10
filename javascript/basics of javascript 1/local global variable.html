@@ -1,0 +1,20 @@
+<script>
+	/*
+		local and global in js
+	*/
+
+	var glob = 12;
+	var i = 10;
+	
+	function test()
+	{
+		glob++;	//inc to global variable
+		var i = 5;
+		alert("local variable in func test: " + i);
+	}
+	
+	test();
+	
+	alert("global: " + glob + ", vaiable i: " + i);
+	
+</script>

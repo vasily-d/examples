@@ -1,0 +1,23 @@
+<script>
+	/*
+		for in object in js
+	*/
+	
+	var myFriend = {
+		name: "Alex",
+		age: 23,
+		height: 170
+	};
+	
+	for (var key in myFriend){
+		console.log("Key: " + key + ", Value: " + myFriend[key]);
+	}
+	
+	//count of elements in object
+	var counter = 0;
+	for(var key in myFriend){
+		counter++;
+	}
+	
+	console.log("Всего элементов: " + counter);
+</script>

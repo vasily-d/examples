@@ -1,0 +1,27 @@
+<script>
+	/*
+		string method in js
+	*/
+	
+	var str1 = "test 'string' test";
+	str1 = 'test "string" test';
+	str1 = "test \"string\" test";
+	str1 = "test \"string\"\n\ttest";
+	console.log(str1);
+	console.log("--------------------------------------");
+	
+	var str = "test string";
+	console.log(str);
+	console.log("length: " + str.length);
+	console.log("toUpperCase: " + str.toUpperCase());
+	console.log("toLowerCase: " + str.toLowerCase());
+	console.log("substring: " + str.substring(2, 7));	//st st - [2,7)
+	console.log("CharAt: " + (str.charAt(1)));	//e
+	console.log("substring: " + str.substring(1, 2));	//e
+	console.log("indexOf: " + "substring 'ring' in string 'test string' (-1): " + str.indexOf("ring"));
+	
+	console.log("--------------------------------------");
+	console.log("before: " + str);
+	str = str.replace("test","test12");	//change str
+	console.log("after: " + str);
+</script>

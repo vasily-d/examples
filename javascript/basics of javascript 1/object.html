@@ -1,0 +1,97 @@
+<script>
+	/*
+		object in js - набор свойств - пара имя: значение;
+	*/
+	
+	//create object - 1 method
+	/*var myFriend = {
+		name: "Alex",
+		age: 23,
+		heigth: 170,
+		say: function() {
+			return "hello";
+		}
+	};*/
+	
+	//create object - 2 method
+	var myFriend = new Object();
+	myFriend.name = "Alex";
+	myFriend.age = 23;
+	myFriend.heigth = 170;
+	
+	myFriend.name = "Mark"; //static
+	myFriend["age"] = 30;	//dynamic
+	
+	var nameOfFriend = myFriend.name;
+	alert("name: " + nameOfFriend);
+	var age = myFriend["age"];
+	alert("age: " + age);
+	
+	/*------------------------------------------------------*/
+	
+	delete myFriend.age;
+	alert("age: " + myFriend.age);	//undefined
+	
+	/*------------------------------------------------------*/
+
+	var testObj = {
+		13: "Alex",
+		15: "David",
+		34: "Mark"	
+	};
+	
+	var numberOfPlayer = 15;
+	var player = testObj[numberOfPlayer];
+	alert("name: " + player);
+	
+	/* add new element */
+	testObj[20] = "Anina";
+	//name.testObj = "Anina";
+	player = testObj[20];
+	alert("name: " + player);
+	
+	/* object in object */
+	var user = {
+		name: "Mark",
+		age: 30,
+		size:
+		{
+			top: 90,
+			bottom: 100
+		}
+	};
+	
+	alert("name: " + user.name);
+	alert("size: " + user.size.top);
+
+	
+	//get and set
+	var person = {
+		firstName: "John",
+		surname: "Robertson",
+		
+		get fullName(){
+			return this.firstName + ' : ' + this.surname;
+		},
+		
+		set fullName(value){
+			var split = value.split(' ');
+			this.firstName = split[0];
+			this.surname = split[1];
+		}
+	};
+	
+	console.log(person.fullName);	//get
+	person.fullName = "Alex Markovich";
+	console.log(person.firstName);	//set
+	console.log(person.surname);	//set
+	console.log(person.fullName);	//set
+	
+	//for in
+	for (key in person){
+		console.log(key + " -> " + person[key]);
+	}
+	
+	
+	
+</script>

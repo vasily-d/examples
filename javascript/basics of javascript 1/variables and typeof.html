@@ -1,0 +1,64 @@
+<script>
+	/*
+		base variable and typeof in js
+	*/
+
+	//integer
+	var a = 23;
+	console.log(window.a);	//global object window
+	console.log(window.window.a);	//Recursion
+	console.log(a);
+	
+	//float
+	var b = 2.45;
+	
+	//string
+	var str = "string";
+	var str1 = "-45";
+	
+	//boolean
+	var c = true;
+	var d = 1;
+	
+	console.log(a + " + " + b + " = " + (a + b));
+	//concatenate and transformation
+	console.log("concatenate: " + str + a);
+	console.log("transform to number: " + +str1);
+	console.log("transform to number: " + +c);
+	console.log("transform to bool: " + !!d);
+	
+	//%
+	console.log("mod: " + 46 + " % " + a + " = " + (46 % a));
+	
+	//typeof
+	var n = null;
+	var obj = {name: "vs"}, array = [1,2,3], reg = /w+/g, func = function(){};
+	console.log("typeof number: " + typeof a);
+	console.log("typeof typeof: " + typeof typeof a);
+	console.log("typeof float: " + typeof b);
+	console.log("typeof string: " + typeof str);
+	console.log("typeof boolean: " + typeof c);
+	
+	//null - пустое значение
+	//undefined  - полное отсутствие значения
+	
+	console.log("typeof null: " + typeof n);
+	console.log(null == undefined); //true
+	console.log(null === undefined);	//false - разные типы! (object != undefined)
+	
+	var r;
+	function test(){}
+	console.log("typeof undefined: " + typeof undefined);
+	console.log("call function: " + test());
+	console.log("variable: " + r);
+	
+	console.log("typeof object: " + typeof obj);
+	console.log("typeof array: " + typeof array);
+	console.log("typeof reg: " + typeof reg);
+	console.log("typeof function: " + typeof func);
+	console.log("typeof Infinity: " + typeof Infinity);
+	console.log("typeof Infinity: " + typeof -Infinity);
+	console.log("typeof NaN: " + typeof NaN);
+	
+	
+</script>

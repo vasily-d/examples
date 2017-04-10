@@ -1,0 +1,46 @@
+<script>
+	/*
+		this, apply, call in js
+	*/
+	
+	function test(){
+		return "Hy! My name is " + this.name;
+	}
+	
+	var person = {
+		name: "John",
+		greet: function(n){
+			return "Hy! My name is " + this.name;
+		}
+	};
+	
+	var anotherPerson = {
+		name: "Bob",
+		greet: function(n){
+			return "Hy! My name is " + this.name;
+		}
+	};
+	
+	
+	console.log(person.greet());
+	
+	//1 - this - ссылка на объект который вызывает эту функцию.. this.name => person.name;
+	console.log(person.name);
+	
+	console.log(anotherPerson.greet());
+	
+	
+	//2 - call method to anothr object - call, apply
+	console.log(anotherPerson.greet.call(person,"one"));
+	console.log(anotherPerson.greet.call(person,["one"]));
+	
+	//3 -  bind только связывает функцию с конкретным объектом
+	var b = test.bind(anotherPerson);
+	console.log(b());	// <=> anotherPerson.test();
+	b = test.bind(person);
+	console.log(b());
+	
+	
+	
+	
+</script>

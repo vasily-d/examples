@@ -1,0 +1,39 @@
+<script>
+	/*
+		Функция принимает 3 числа. Наибольшее из этих чисел нужно
+		разделить на наименьшее. Вернуть данный результат с помощью
+		оператора return.
+	*/
+
+	function maxMinDivision(a,b,c)
+	{
+		/*find max*/
+		var max = 0;
+		if((a>b)&&(a>c))
+			max = a;
+		else if((b>a)&&(b>c))
+			max = b;
+		else
+			max = c;
+		
+		/*find min*/
+		var min = 0;
+		if((a<b)&&(a<c))
+			min = a;
+		else if((b<a)&&(b<c))
+			min = b;
+		else
+			min = c;
+		
+		if(min != 0)
+			return max/min;
+		else
+			return 'ERROR: division to zero!';
+	}
+	
+	var number1 = parseInt(prompt('enter first number',0));
+	var number2 = parseInt(prompt('enter second number',0));
+	var number3 = parseInt(prompt('enter three number',0));
+	
+	alert(maxMinDivision(number1,number2,number3));	
+</script>

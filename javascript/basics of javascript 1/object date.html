@@ -1,0 +1,42 @@
+<script>
+	/*
+		Date in js
+	*/
+	
+	//current time and date + UTC
+	var now = new Date();
+	console.log(now);
+	console.log("timestamp now: "+now.getTime());
+	//or
+	now = new Date(2017,03,19,12,32,40,200);	//month from 0 - january
+	console.log(now);
+	console.log("Milliseconds: " + now.getMilliseconds());
+	console.log("");
+	
+	//GET
+	console.log("GET ---------------------------------------------------");
+	console.log(now);
+	console.log("Year: "+now.getYear());	
+	console.log("FullYear: "+now.getFullYear());	
+	console.log("Month: "+now.getMonth());
+	console.log("Day: "+now.getDate());	
+	console.log("Day2: "+now.getDay());	
+	console.log("Hour: "+now.getHours());	
+	console.log("Minute: "+now.getMinutes());	
+	console.log("Seconds: "+now.getSeconds());
+	console.log("timestamp: "+now.getTime());
+	console.log("toTime: "+now.toTimeString());
+	console.log("toDate: "+now.toDateString());
+	console.log("");
+	
+	//SET
+	console.log("SET ---------------------------------------------------");
+	var d = new Date(2011,1,27,10,01,01,0);
+	console.log("Year: " + d.getFullYear());
+	d.setFullYear(d.getFullYear()+2);
+	console.log("Year +2: " + d);
+	
+	console.log("Hours: " + d.getHours());
+	d.setHours(d.getHours()+3);
+	console.log("Hours +3: " + d);	
+</script>

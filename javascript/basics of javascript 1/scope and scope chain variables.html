@@ -1,0 +1,22 @@
+<script>
+	/*
+		scope and scope chain (up - hosting) variable in js
+	*/
+
+	i = 5;	//global
+	
+	var func = function(){
+		var  i = 10;	// Declaring variables in first line in block!!
+		console.log("local 1: " + i);
+	
+		var func2 = function() {
+			//var i = 15; // Declaring variables in first line in block!!
+			console.log("local 2: " + i);	//undefined
+			var i = 15;
+		}
+		func2();
+	};
+	
+	func();
+	
+</script>

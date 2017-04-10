@@ -1,0 +1,40 @@
+<script>
+	/*
+		Составить алгоритм вывода среднего из трёх чисел в виде блок-схемы
+		Важно! Именно среднего, а не среднего арифметического!
+		Вход: три числа
+		Выход: среднее число
+	*/
+
+	var a = prompt("enter first number",0);
+	var b = prompt("enter second number",0);
+	var c = prompt("enter third number",0);
+	
+	if(a>b && a>c)
+	{
+		if(b>c){
+			alert('Average: '+ b);
+		}
+		else{
+			alert('Average: '+ c);
+		}		
+	}
+	else if(b>c && b>a)
+	{
+		if(c>a){
+			alert('Average: '+ c);
+		}
+		else{
+			alert('Average: '+ a);
+		}
+	}
+	else
+	{
+		if(b>a){
+			alert('Average: '+ b);
+		}
+		else{
+			alert('Average: '+ a);
+		}
+	}	
+</script>

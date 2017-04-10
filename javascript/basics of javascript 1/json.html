@@ -1,0 +1,30 @@
+<script>
+	/*
+		json in js - набор свойств - пара имя: значение;
+	*/
+	
+	//object to string - serialization
+	var user = {
+		name: "John",
+		d: Date.now(),
+		id: 145,
+		
+		toJSON: function() {
+			return {
+				name: this.name,
+				d: this.d
+				//filter to id
+			}			
+		}
+	};
+	
+	var userData = JSON.stringify(user);
+	console.log(user);
+	console.log(userData);
+	console.log(userData[4]);
+	
+	//from string json to object
+	console.log(JSON.parse(userData));
+	for(var key in JSON.parse(userData))
+		console.log(key + " - " + JSON.parse(userData)[key]);	
+</script>

@@ -1,0 +1,33 @@
+<script>
+	/*
+		References, variables and objrct in js
+	*/
+	
+	//variables
+	var a = 5;
+	var b = 10;
+	
+	console.log("a: " + a);
+	console.log("b: " + b);
+	
+	a = b;	//not References!
+	
+	b = 40;
+	
+	console.log("a: " + a); //is not changed!
+	console.log("b: " + b);
+	
+	//object
+	var a = {x: 10}, b = {x: 20};
+	
+	console.log("a.x: " + a.x);
+	a = b; //References
+	b.x = -30;
+	console.log("a.x: " + a.x);	//changed!
+	
+	
+	
+	
+	
+	
+</script>

@@ -1,0 +1,32 @@
+<script>
+	/*
+		Написать функцию, которая принимает в качестве параметра массив
+		чисел. Она должна обойти весь массив и вернуть среднее
+		арифметическое его элементов.
+	*/
+
+	function averageOfMass(a){
+		var sum = 0;
+		for(var i = 0; i < a.length; i++)
+			sum += a[i];
+			
+		if(a.length != 0)
+			return sum/a.length;
+		
+		return 'ERROR: lenght of massive is 0';
+	}
+	
+	/*user interface*/
+	var mass = [];  
+	while(true){
+		var x = parseInt(prompt('enter number - 999 to exit'));
+		
+		if(x != 999)
+			mass.push(x);
+		else
+			break;
+	}
+	
+	var average = averageOfMass(mass);
+	alert('average of massive ['+ mass + '] is ' +average);
+</script>

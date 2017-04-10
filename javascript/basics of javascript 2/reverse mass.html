@@ -1,0 +1,32 @@
+<script>
+	/*
+		Ќаписать функцию, котора€ принимает в качестве параметра массив
+		и возвращает массив, элементы которого располагаютс€ в обратном
+		пор€дке.
+	*/
+	function reverseMass(m){
+		var m2 = [];
+		
+		if(m.length == 0)
+			return m;
+		
+		for(var i = 0; i < m.length; i++)
+			m2.push(m[m.length-1-i]);
+		
+		return m2;		
+	}
+	
+	var mass = ['abc', 'lorem', 'index', '123 deg'];
+
+	/*before reverse*/
+	var result = '';
+	for(var i = 0; i < mass.length; i++)
+		result += mass[i]+',';
+		
+	alert('Normal: '+result);
+
+	var reverseMass = reverseMass(mass);
+
+	/*after reverse*/
+	alert('Reverse: '+reverseMass);
+</script>

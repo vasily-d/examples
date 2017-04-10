@@ -1,0 +1,21 @@
+<script>
+	/*
+		Написать функцию, которая принимает одно число и сообщает
+		чётное оно или нечётное.
+	*/
+
+	function isEven(a)
+	{
+		if(a % 2 == 0)
+			return true;
+		
+		return false;
+	}
+
+	var number = parseInt(prompt('enter number',0));
+
+	if(isEven(number))
+		alert(number+' is even');
+	else
+		alert(number+' is odd');
+</script>

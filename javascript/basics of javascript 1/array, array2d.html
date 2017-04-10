@@ -1,0 +1,33 @@
+<script>
+	
+	//array	
+	var mass = [];
+	
+	for(var i = 0; i < 10; i++)
+		mass[i] = i*3;
+	
+	alert(mass);
+	
+	//2d array
+	var arr_1 = new Array();	//Array is object
+	var arr_2 = new Array();
+	var arr_3 = new Array();
+	
+	for(var i = 0; i < 5; i++) arr_1[i] = i;
+	for(var i = 0; i < 10; i++) arr_2[i] = i;
+	for(var i = 0; i < 15; i++) arr_3[i] = i;
+	
+	var arr = new Array(arr_1, arr_2, arr_3);
+	alert(arr[1][10]);	//number of massive(0-2), element in current massive 
+	alert(arr[2][10]);
+	alert(arr[2][14]);
+	alert(arr[2][arr_3.length-1]);
+	
+	//two loop
+	for(var i = 0; i < arr.length; i++)
+		for(var j = 0; j < arr[i].length; j++)
+		{
+			console.log(arr[i][j]);
+		}
+	
+</script>

@@ -1,0 +1,24 @@
+<script>
+	/*
+		function in js
+	*/
+
+	function getHypotenuse(a, b)
+	{		
+		var c = Math.pow(a,2)+Math.pow(b,2);
+		
+		if(c >= 0) return Math.sqrt(c);
+		
+		return "ERROR in sqrt";
+	}
+	
+	var a = "3s";
+	var b = 4;
+	
+	a = parseInt(a);
+	b = parseInt(b);
+	
+	alert("Hypotenuse of "+a+" and "+b+" is "+getHypotenuse(a, b));
+	
+	
+</script>

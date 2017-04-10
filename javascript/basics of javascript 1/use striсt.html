@@ -1,0 +1,21 @@
+<script>
+	/*
+		use strict
+	*/
+	
+	'use strict';
+	
+	city = "New York";	//error
+	
+	var obj = {
+		name: "alf",
+		name: "alex"	//error
+	};
+	
+	with (obj) {	//error
+		console.log(name);
+	}
+	
+	var octal = 0251; //error oct
+	console.log(octal);
+</script>

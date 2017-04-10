@@ -1,0 +1,22 @@
+<script>
+	/*
+		class in js
+	*/
+	
+	var Person, person, anotherPerson;
+	
+	//constuctor of class Person
+	//object - это экземпляр класса!
+	Person = function(name) {
+		this.name = name; //create variable of class
+	
+	};
+	
+	person = new Person("Jack");	//create object person
+	console.log(person.name);
+	console.log(person instanceof Person);
+	
+	anotherPerson = new Person("Alex");	//create another object anotherPerson
+	console.log(anotherPerson.name);
+	console.log(anotherPerson instanceof Person);	
+</script>

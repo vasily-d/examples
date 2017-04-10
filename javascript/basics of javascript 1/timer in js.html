@@ -1,0 +1,23 @@
+<script>
+	/*
+		timer in js
+	*/
+
+	function test2(b)
+	{
+		alert(b);
+	}
+	
+	function test(a)
+	{
+		console.log(i++ + " " + a);
+		if(i == 3)
+		{
+			clearInterval(idTimer);
+			setTimeout(test2, 3000, "timeout");	//async!
+		}
+	}
+	
+	var i = 0;
+	var idTimer = setInterval(test, 1000, "setInterval");	
+</script>

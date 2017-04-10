@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body onload="timer()">
+	<span>-1</span>
+	
+	<script>
+		var count = 0;
+	
+		function timer()
+		{
+			var id = document.getElementsByTagName('span')[0];
+			id.innerHTML = ++count;
+			var i = setTimeout(timer, 1000);
+
+			if(count == 5) clearTimeout(i);
+		}		
+	</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<script>
+	/*
+		throw, try catch in js
+	*/
+	
+	var calculate = function(n) {
+		if(n > 10) throw new Error("n should be less than 10");
+		return n + 10;
+	};
+	
+	//calculate(20);
+	
+	try {
+		console.log(calculate(20));
+		//console.log(calculate(10));
+	} catch(e) {
+		console.log("Can`t execute calculate: " + e.message);
+	}
+	
+</script>

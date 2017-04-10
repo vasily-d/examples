@@ -1,0 +1,22 @@
+<script>
+	/*
+		max in massive
+	*/
+	
+	function maxOfMassive(a){
+		var max = -Infinity;
+		
+		for(var i = 0; i < a.length; i++)
+		{
+			if(a[i] > max)
+				max = a[i];				
+		}
+		
+		return max;	
+	}
+	
+	var mass = [1,2,560,-3000,99];	
+	var result = maxOfMassive(mass);
+	
+	alert('max number of massive [' + mass + '] is ' + result);
+</script>

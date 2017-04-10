@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+		var e = "PI: " + Math.PI;
+		e += "\nE: " + Math.E;
+		e += "\nsqrt: " + Math.sqrt(400);
+		e += "\npow: " + Math.pow(2,5);
+		e += "\nabs: " + Math.abs(-4);
+		e += "\nsin: " + Math.sin(1);
+		e += "\ncos: " + Math.cos(0);
+		e += "\ntan: " + Math.tan(0);
+		e += "\nexp: " + Math.exp(2);
+		e += "\nlog: " + Math.log(5);
+		e += "\nround: " + Math.round(9.2);	//9
+		e += "\nrandom: " + Math.random();
+		e += "\nfloor: " + Math.floor(5.3);	//5
+		e += "\nceil: " + Math.ceil(5.6);	//6
+		e += "\nmin: " + Math.min(5,6,-2);	//-2
+		e += "\nmax: " + Math.max(5,6,-3);	//6
+		e += "\nrandom min - max: " + Math.floor(Math.random() * 11);	//[0-10]
+		alert(e);
+		
+		var getRandom = function(min, max){
+			return Math.random() * (max - min) + min;
+		};
+		console.log("random: " + getRandom(10,20));
+	</script>
+</body>
+</html>

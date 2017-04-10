@@ -1,0 +1,44 @@
+<script>
+	/*
+		for, while, do while
+	*/
+
+	var mass = [];
+	//var mass = new Array();
+	
+	//for
+	var i;	//scope
+	for(i = 0; i < 10; i++)
+	{
+		mass.push(Math.random());
+	}
+		
+	//while
+	i = 0;
+	while(i < 10)
+	{
+		console.log(i + " " + mass[i]);
+		i++;
+	}
+	
+	//do while
+	var mass2 = [1,2,3,4,5,6,7,8,9,10];
+	
+	i = 0;
+	do
+	{
+		if((mass2[i] % 3) == 0)
+			console.log(mass2[i]);
+			
+		i++;
+	} while (i <= 9); //;!
+	
+	//continue, break, length
+	var len  = mass.length;
+	for(i = 0; i < len; i++)
+	{
+		if((mass2[i] % 3)) continue; //break;
+		
+		console.log(mass2[i]);
+	}
+</script>

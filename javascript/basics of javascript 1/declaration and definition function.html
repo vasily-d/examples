@@ -1,0 +1,47 @@
+<script>
+	
+	//declaration and definition function
+	function greet(name) {
+		return "hello " + name;
+	}
+	
+	//anonymous function
+	var greet = function(name) {
+		return "hello " + name;
+	}; //!!
+	
+	console.log(greet("vs").toUpperCase());
+	
+	//arguments
+	var foo = function(t) {
+		console.log(arguments.length);
+	};
+	
+	foo(3,2,"23");
+	
+	//callback
+	var foo2 = function(callback) {
+		var name = "vs";
+		callback(name);		
+	};
+	
+	foo2(function(n){
+		console.log("hello " + n);
+	});
+	
+	//return function
+	var foo3 = function() {
+		return function() {
+			console.log("Hi");
+		}
+	};
+	
+	foo3()();
+	
+	//self-invoking anonumouse function
+	var foo4 = (function(name) {
+		return "hello " + name;
+	}("Vs"));
+
+	console.log(foo4);	
+</script>

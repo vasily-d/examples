@@ -1,0 +1,115 @@
+<script>
+	/*
+		array method
+	*/
+	
+	var mass = []; //empty massive
+	var mass2 = [1,2.3,true,{name: 'John'},"str"];
+	
+	console.log(mass2);
+	console.log('lenght: '+mass2.length);
+	console.log('first element: '+mass2[0]);
+	console.log('last element: '+mass2[mass2.length-1]);
+	console.log("-----------------------");
+	
+	//length array
+	console.log("length: "+mass.length+" "+mass2.length);
+	console.log("-----------------------");
+	
+	//push pop - to end, unshift shift - to start
+	console.log(mass2);
+	mass2.pop();
+	console.log("after pop: "+mass2);
+	mass2.push("str1");
+	console.log("after push: "+mass2);
+	
+	mass2.shift();
+	console.log("after shift: "+mass2);
+	mass2.unshift(4);
+	console.log("after unshift: "+mass2);
+	console.log("-----------------------");
+	
+	//concat
+	console.log(mass2.concat("hello"));
+	
+	//split - string to array
+	var st = "john, Mari, Tim";	//', '
+	var m = st.split(', ');
+	for(var i = 0; i < m.length; i++){
+		console.log("split: "+m[i]);
+	}
+	
+	//split to char
+	st = "Kate";
+	console.log("split to char: "+st.split(''));
+	//alert(st);
+	console.log("-----------------------");
+	
+	//join - array to string
+	m = ['one','two','three'];
+	st = m.join('; ');
+	console.log("join: "+st);
+	console.log("-----------------------");
+	
+	//delete in array
+	m = ['one','two','three'];
+	delete m[1];
+	console.log("delete: "+m);
+	
+	//splice
+	m = ['one','two','three'];
+	m.splice(1,1);
+	console.log("splice: "+m);
+	console.log("-----------------------");
+	
+	//reverse array
+	m = ['one','two','three'];
+	m.reverse();
+	console.log("reverse: "+m);
+	
+	//isArray
+	console.log("is Array: " + Array.isArray(m));
+	
+	//length to short array
+	console.log(m);
+	m.length = 1;
+	console.log(m);
+	console.log("-----------------------");
+	
+	
+	//new method in es5
+	var arr = ["first", "second", "third"];
+	
+	arr.forEach(function(element, index, array){
+		arr[index] = element.toUpperCase();
+		console.log(arr[index]);
+	});
+	
+	var filtered = arr.filter(function(e){
+		return e.indexOf('F') === -1;	//регистрозависима!
+	});
+	console.log(filtered);
+	
+	//return bool
+	//true if all element return true else return false
+	var b = arr.every(function(e){
+		return e.length > 4
+	});
+	console.log(b);
+	
+	//true if someone return true else return false
+	b = arr.some(function(e){
+		return e.length > 10
+	});
+	console.log(b);
+	
+	//reduced (temp element)
+	var reduced = arr.reduce(function(temp, currentElement){
+		return temp + ", " + currentElement;	
+	});
+	console.log(reduced);
+	
+	//indexOf() as indexOf with string
+	console.log(arr.indexOf("SECOND"));	//1
+	console.log(arr.indexOf("five"));	//-1	
+</script>

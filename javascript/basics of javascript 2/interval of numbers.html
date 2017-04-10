@@ -1,0 +1,32 @@
+<script>
+	/*
+		Задание со звёздочкой (*). На вход подаётся положительное целое
+		число. Нужно вывести целые числа от заданного до 10. Если оно
+		изначально больше 10 - завершить программу.
+		Вход: одно число
+		Выход: ряд чисел
+	*/
+
+	var number = prompt("enter positive number",0);
+	
+	if(number>10){
+		alert('error: number > 10');
+	}
+	else
+	{
+		var str = '';
+		while(number <= 10)
+		{
+			if(number != 10){
+				str = str+number+', ';
+			}
+			else{
+				str = str+number;
+			}
+			
+			number++;
+		}
+		
+		alert(str);
+	}
+</script>
