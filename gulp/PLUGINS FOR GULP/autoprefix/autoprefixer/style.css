@@ -12,8 +12,10 @@
 }
 
 body{
-	background: -webkit-linear-gradient(45deg, #ff0, #f00);
-	background: linear-gradient(45deg, #ff0, #f00);
+	background-color: #eee;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 #wrapper {
@@ -21,7 +23,7 @@ body{
   min-height: 100%;
   overflow: hidden;
   margin: 0px auto;
-  background-color: #eee;
+  background: linear-gradient(#1ff, #ff0);
 }
 #wrapper header {
   min-height: 42px;

@@ -1,1 +1,1 @@
-gulp examples without installated plugins 
+gulp examples without node_modules

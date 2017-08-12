@@ -25,7 +25,6 @@ gulp.task('watch', function(callback) {
 	runSequence('console1', 'console2', 'cssmin', 'console3', callback);	
 });
 
-
 //main point
 gulp.task('default', function() {
 	gulp.watch('css/*.css', ['watch']);

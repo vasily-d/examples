@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var less = require('gulp-less');
 
 gulp.task('test', function() {
-	console.log('test');
+	console.log('test1');
 });
 
 gulp.task('test2', function() {

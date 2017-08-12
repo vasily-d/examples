@@ -6,7 +6,6 @@ gulp.task('clean', function() {
 	return del.sync('temp');
 });
 
-
 //main point
 gulp.task('default', ['clean'], function() {
 	//
