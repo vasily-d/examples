@@ -1,0 +1,35 @@
+	ставим gulp:
+1 установка nodejs
+2 npm i gulp -g или npm i -g gulp-cli
+3 npm init	//можно файл package.json удалить и после через init восстановить уже сновыми связями если нужено его обновить
+4 npm i gulp --save-dev в папку текущего проекта сохранить все зависимости из package,json 
+	//npm i - установить все зависимости если надо и если нет папки node_modules в проекте
+
+5 создаем общую структуру проекта, а именно
+	dist - продакшен
+	app - папка разработчика
+		js,img,less,fonts,css, index.html	
+
+6 создаем в корне проекта gulpfile.js
+7 формируем данный файл
+	var gulp = require('gulp'); //подключаем модули
+	var ...
+	+
+	добавляем task-и
+
+8 доустанавливаем доп модули через npm, например npm i gulp-less --save-dev
+	//--save-dev обязательно для дозаписи в package.json
+
+9 запускаем gulp по дефолту из проекта или по имени таска
+
+
+//шаблон любого gulp - основа
+var gulp = require('gulp');
+
+gulp.task('myTask', function(){
+	return gulp.src('')
+	.pipe(plugin())
+	.pipe(gulp.dest(''))
+});
+
+//pipe - вызов плагина

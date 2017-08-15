@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clear {
+  clear: both;
+}
+
+body{
+	background: linear-gradient(45deg, #ff0, #f00);
+}
+
+#wrapper {
+  max-width: 780px;
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0px auto;
+  background-color: #eee;
+}
+#wrapper header {
+  min-height: 42px;
+  background-color: lime;
+  width: 100%;
+}
+#wrapper header ul {
+  list-style: none;
+  text-align: center;
+  padding: 10px 0px;
+}
+#wrapper header ul li {
+  display: inline-block;
+  width: 70px;
+  margin-left: 40px;
+}
+#wrapper header ul li:last-child {
+  margin-right: 40px;
+}
+#wrapper header ul a {
+  text-decoration: none;
+  display: block;
+  color: green;
+  font-size: 20px;
+  padding: 5px;
+  background-color: yellow;
+}
+#wrapper .slider {
+  min-height: 135px;
+  overflow: hidden;
+}
+#wrapper .slider img {
+  width: 100%;
+}
+#wrapper nav {
+  min-height: 44px;
+  background-color: #aa5;
+}
+#wrapper nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 10px 0px;
+}
+#wrapper nav ul li {
+  display: inline-block;
+  width: 70px;
+  margin-left: 40px;
+}
+#wrapper nav ul li:last-child {
+  margin-right: 40px;
+}
+#wrapper nav ul a {
+  text-decoration: none;
+  display: block;
+  color: green;
+  font-size: 20px;
+  padding: 10px;
+  background-color: yellow;
+}
+#wrapper .main {
+  min-height: 550px;
+  background-color: yellow;
+}
+#wrapper .main aside {
+  height: inherit;
+  width: 235px;
+  float: left;
+  background-color: yellow;
+  margin: 10px;
+}
+#wrapper .main section {
+  height: inherit;
+  overflow: hidden;
+  background-color: #08f;
+}
+#wrapper .main section h1 {
+  margin: 20px 20px -20px 20px;
+}
+#wrapper .main section img {
+  margin: 20px;
+  float: left;
+}
+#wrapper .main section p,
+#wrapper .main section p.one {
+  overflow: hidden;
+  margin: 20px;
+}
+#wrapper footer {
+  height: 50px;
+  background-color: lime;
+  text-align: right;
+  padding: 10px;
+}
+@media all and (max-width: 800px) {
+  aside {
+    display: none;
+  }
+  #wrapper header ul li {
+    display: block;
+    margin: 0 auto;
+  }
+  #wrapper header ul li:last-child {
+    margin: 0 auto;
+  }
+  #wrapper nav ul li {
+    display: block;
+    margin: 0 auto;
+  }
+  #wrapper nav ul li:last-child {
+    margin: 0 auto;
+  }
+  #wrapper footer {
+    text-align: center;
+  }
+  #wrapper .main {
+    height: 550px;
+  }
+}
+@media all and (max-width: 600px) {
+  #wrapper .main section img {
+    display: none;
+  }
+}

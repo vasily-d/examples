@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+}
+#one {
+  background-color: #ff0;
+  width: 300px;
+}
+#two {
+  background-color: #1f0;
+  width: 200px;
+}
