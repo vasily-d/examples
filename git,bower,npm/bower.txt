@@ -1,0 +1,33 @@
+bower - это поиск, установка, обновление и удаление БИБЛИОТЕК.
+require node js и git bash.
+dependencies - библиотеки, без которых проект работать не будет на продакшене. Такие как jquery, normalize.css и прочие
+файл .bowerrc нужен для конфигурации самого bower
+
+npm install -g bower
+
+commands:
+bower -v
+bower search jquery
+bower info jquery
+
+bower install jquery
+bower i jquery
+bower i jquery#1.6.4
+bower i normalize.css
+bower uninstall jquery
+
+// список установленных библиотек
+bower list
+bower list --path
+
+
+
+// bower.json
+bower init
+bower install jquery --save // данная библиотека должна быть в продакшен версии нашего проекта
+bower install jquery --save-dev // данная библиотека должна быть в разработчика версии нашего проекта
+bower uninstall jquery normalize.css --save
+bower uninstall jquery normalize.css --save-dev
+ключи:
+--save - зависимости только для продакшен
+--save-dev - зависимости только для разработки

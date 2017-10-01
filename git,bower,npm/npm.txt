@@ -1,0 +1,17 @@
+required node js.
+
+npm -v
+npm init // for package.json
+npm install underscore -g
+npm install underscore --save-dev
+npm i underscore --save-dev
+npm i jquery@3.1.1 --save-dev	// перезаписывает текущую версию
+npm uninstall jquery
+npm list
+npm update
+
+
+
+-g
+--save		// dependencies
+--save-dev	// devDependencies
