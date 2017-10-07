@@ -22,12 +22,17 @@ bower list --path
 
 
 
-// bower.json
+// bower.json - create file manual and write
+{
+  "name": name_project
+}
+
 bower init
 bower install jquery --save // данная библиотека должна быть в продакшен версии нашего проекта
 bower install jquery --save-dev // данная библиотека должна быть в разработчика версии нашего проекта
 bower uninstall jquery normalize.css --save
 bower uninstall jquery normalize.css --save-dev
+
 ключи:
 --save - зависимости только для продакшен
 --save-dev - зависимости только для разработки

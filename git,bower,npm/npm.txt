@@ -1,7 +1,7 @@
 required node js.
 
 npm -v
-npm init // for package.json
+npm init // create package.json
 npm install underscore -g
 npm install underscore --save-dev
 npm i underscore --save-dev
@@ -12,6 +12,6 @@ npm update
 
 
 
--g
+-g		// global
 --save		// dependencies
 --save-dev	// devDependencies
