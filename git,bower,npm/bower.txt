@@ -24,7 +24,7 @@ bower list --path
 
 // bower.json - create file manual and write
 {
-  "name": name_project
+  "name": "name_project"
 }
 
 bower init
