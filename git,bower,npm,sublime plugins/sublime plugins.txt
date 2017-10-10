@@ -1,0 +1,11 @@
+https://packagecontrol.io/installation
+ctr+~
+
+ctr+shift+p:
+install package
+emmet
+autofilename
+all autocomplete	//watch all project
+BracketHighlighter
+ColorHighlighter
+jsx
