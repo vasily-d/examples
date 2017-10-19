@@ -1,1 +1,1 @@
-examples of gulp, less, sass, css3, basic javascript, jquery, flexbox, git, npm, bower
+examples of gulp, less, sass, css3, basic javascript, jquery, flexbox, git, npm, bower, .htaccess
